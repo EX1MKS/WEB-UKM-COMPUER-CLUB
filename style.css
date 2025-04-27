@@ -146,49 +146,7 @@ nav ul li:hover::after{
   }
 
 @media screen and (max-width: 680px) {
-    nav ul{
-      position: absolute;
-      right: -2px;
-      top: 0;
-      text-align: right;
-      width: 42%;
-      height: 100vh;
-      margin-top: 15px;
-      padding-top: 50px ;
-      flex-direction: column;
-      background-color: #ffffff;
-      z-index: -2;
-      transform: translateX(100%);
-      transition: all 1s;
-      opacity: 0;
-    }
-    .logo a h1{
-      display: none;
-    }
-    .toggle{
-    display: flex;
-    }
-    nav ul.slide {
-      transform: translateX(0%);
-      opacity: 1;
-    }
-    nav ul li {
-      font-size: 1.5rem;
-      margin-bottom: 30px;
-      font-weight: 800;
-    }
-
-    .hero-text h1{
-        font-size: 2rem ;
-    }
-
-    .hero-text p{
-        font-size: 1.2rem !important;
-    }
-    .hero-text{
-        top: 24vh !important;
-        margin-bottom : 68vh !important;
-    }
+    
   }
   
   .hero {
@@ -305,7 +263,7 @@ nav ul li:hover::after{
   width: 38vh;
   height: 40vh;
   border-radius: 10px;
-  padding: 2rem 1rem;
+  padding: 2.5rem 1rem;
   box-shadow: rgba(67, 67, 67, 0.8) 1px 2px 5px;
   transition: .3s ease-in-out;
 }
@@ -427,7 +385,7 @@ footer .description p{
 
 footer .quicklink{
   margin: 30px 0 0 0;
-  padding: 0 0 0 10px;
+  padding: 0 0 0 20px;
   text-align: left;
 }
 
@@ -440,7 +398,13 @@ footer .quicklink h3{
 footer .quicklink a{
   text-decoration: none;
   color: white;
+  transition: 0.5s;
 }
+footer .quicklink a:hover{
+  color: blue;
+  transition: 0.5s;
+}
+
 
 footer .contact{
   margin: 30px 0 0 0;
@@ -456,4 +420,154 @@ footer .contact h3{
 footer .contact a{
   margin: 20px 20px 0 0;
   color: white;
+  transition: 0.5s;
+}
+
+footer .contact .contact-icon a:hover{
+  color: blue;
+  transition: 0.5s;
+}
+
+.footer-bottom{
+  background-color: black;
+  color: white;
+}
+
+/* responsive style */
+@media (max-width: 1190px) { 
+  .proker-content {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.proker{
+  height: auto;
+  margin-bottom: 40px;
+}
+
+.proker-card-wrapper{
+  margin-top: 30px;
+}
+
+.proker-card{
+  width: 45vh;
+}
+
+.divisi{
+  height: auto;
+  margin-bottom: 40px;
+}
+.divisi-content {
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+footer{
+  height: 50vh;
+}
+footer .contact{
+  padding: 0 0 0 10vh;
+}
+footer .contact-icon{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+footer .contact h3{
+  margin: 0;
+}
+}
+
+@media (max-width: 768px) { 
+ .proker h1, .divisi h1{
+  font-size: 2rem;
+ }
+
+ .proker .keterangan, .divisi .keterangan{
+  text-align: center;
+  margin: 0;
+  margin: 0 10% 0 10% !important;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+.divisi-card {
+  margin-bottom: 15px;
+}
+
+nav ul{
+  position: absolute;
+  right: -2px;
+  top: 0;
+  text-align: right;
+  width: 42%;
+  height: 100vh;
+  margin-top: 15px;
+  padding-top: 50px ;
+  flex-direction: column;
+  background-color: #ffffff;
+  z-index: -2;
+  transform: translateX(100%);
+  transition: all 1s;
+  opacity: 0;
+}
+.logo a h1{
+  display: none;
+}
+.toggle{
+display: flex;
+}
+nav ul.slide {
+  transform: translateX(0%);
+  opacity: 1;
+}
+nav ul li {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  font-weight: 800;
+}
+
+.hero-text h1{
+    font-size: 2.5rem ;
+    margin-top: 0.1rem;
+}
+.hero-text span{
+    font-size: 1.2rem;
+}
+.hero-text p{
+    font-size: 1.2rem !important;
+}
+.hero-text{
+    top: 40vh !important;
+    margin-bottom : 80vh !important;
+}
+footer h3{
+  font-size: 1.2rem !important;
+}
+footer a{
+  font-size: 0.8rem !important;
+}
+footer .description p{
+font-size: 0.6rem !important;
+}
+}
+
+
+@media (max-width: 480px) { 
+  .divisi-card{
+    height: 40vh;
+    padding: 4rem 1rem;
+  }
+  .proker{
+    text-align: center;
+    padding: 0 10px;
+  }
+  footer .contact-icon{
+    justify-content: space-evenly;
+  }
 }
