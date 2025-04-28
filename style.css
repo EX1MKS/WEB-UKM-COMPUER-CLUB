@@ -292,13 +292,13 @@ nav ul li:hover::after{
 }
 .proker-card-wrapper {
   position: relative;
-  width: 40vh;
   height: 30vh;
   transition: .3s ease-in-out;
   display: flex;
   justify-content: center;
   align-items: flex-start;
   width: fit-content;
+  margin: 15px;
   height: fit-content;
 }
 .proker-content {
@@ -464,9 +464,12 @@ footer .contact .contact-icon a:hover{
   justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
-  width: 70%;
+  width: 90%;
   margin: 0 auto;
   margin-top: 50px;
+}
+.divisi-card{
+  width: 30vw;
 }
 footer{
   padding-bottom: 10vh;
@@ -511,7 +514,7 @@ nav ul{
   width: 42%;
   height: 100vh;
   margin-top: 15px;
-  padding-top: 50px ;
+  padding-top: 50px;
   flex-direction: column;
   background-color: #ffffff;
   z-index: -2;
@@ -562,6 +565,10 @@ font-size: 0.6rem !important;
 
 
 @media (max-width: 480px) { 
+  nav ul li a{
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
   .divisi{
     height: auto;
     margin-bottom: 15vh;
@@ -588,11 +595,11 @@ font-size: 0.6rem !important;
     padding: 0 10px;
   }
   .proker-card-wrapper{
-    width: 35vh !important;
+    width: 35vh;
   }
   .divisi-card{
     width: 64vw !important;
-    
+
   }
   .divisi-card .icon{
     font-size: 9vw;
