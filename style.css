@@ -276,7 +276,7 @@ nav ul li:hover::after{
   margin: 0 0 0 30px;
 } */
 .proker-card-wrapper:hover,.divisi-card:hover{
-  transform: scale(1.05);
+  transform: scale(1.05) !important;
 }
 .proker-card {
   color:  rgb(2, 2, 123);
